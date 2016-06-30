@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load django_markdown %}
+{% block content %}
+<div class="posts">
+        <section class="post">
+            <header class="post-header">
+            	{% load staticfiles %}
+            	<img class="post-avatar" alt="PengYang" height="48" width="48" src="{% static "pengyang.png" %}">
+                <h2 class="post-title">
+                	{{ article.title }}</h2>
+                    <p class="post-meta">
+                        Time:  <a class="post-author" href="#">{{ article.update_date }}</a> 
+                        {% for tag in tags %}
+                        <a class="post-category post-category-js" href="/searchtag/?id={{tag.id}}">{{ tag.tag_name }}</a>
+                        {% endfor %}
+                    </p>
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ article.description|markdown }}
+                    </p>
+                </div>
+                <div class="post-description">
+                    <p>
+                        {{ article.content|markdown }}
+                    </p>
+                </div>
+
+        </section>
+        {% include "duoshuo.html" %}
+</div><!-- /.blog-post -->
+{% endblock %}

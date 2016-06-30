@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load django_markdown %}
+{% block content %}
+<div class="posts">
+    {% for article in post_list%}
+        <section class="post">
+            <header class="post-header">
+            	{% load staticfiles %}
+            	<img class="post-avatar" alt="PengYang" height="48" width="48" src="{% static "pengyang.png" %}">
+                <h2 class="post-title">
+                	<a href="/content/?id={{article.id}}">{{ article.title }}</a>
+                    <p class="post-meta">
+                        Time:  <a class="post-author" href="#">{{ article.update_date }}</a>
+                    </p>
+
+            </header>
+
+                <div class="post-description">
+                    <p>
+                        {{ article.description|markdown }}
+                    </p>
+                </div>
+        </section>
+    {% endfor %}
+
+    {% if post_list.object_list and post_list.paginator.num_pages > 1 %}
+        <div>
+            <ul>
+            {% if post_list.has_previous %}
+                <li><a href="?page={{ post_list.previous_page_number }}">Last Page</a></li>
+            {% endif %}
+            {% if post_list.has_next %}
+                <li><a href="?page={{ post_list.next_page_number }}">Next Page</a></li>
+            {% endif %}
+            </ul>
+        </div>
+    {% endif %}
+</div><!-- /.blog-post -->
+{% endblock %}
