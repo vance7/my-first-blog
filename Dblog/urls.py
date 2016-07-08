@@ -19,6 +19,7 @@ from Dblog.blog import views
 admin.autodiscover()
 
 urlpatterns = [
+    url(r'^$',views.index),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index',views.index),
     url(r'^content',views.content),
