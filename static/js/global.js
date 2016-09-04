@@ -117,7 +117,8 @@ Global.scrollHandle = function(scrollDown){
             if ( Global.section_num > 1 ) {
                 Global.shrinkHeader(true);
             }
-        }else{
+        }
+        else{
             if ( Global.section_num === 1 ) {
                 Global.shrinkHeader(false);
             }
@@ -194,7 +195,7 @@ Global.handleTouchEvent = function(event){
 
 $(document).ready(function() {
 
-    $('a[href="#"]').click( function(e) { e.preventDefault(); return false; } );
+    // $('a[href="#"]').click( function(e) { e.preventDefault(); return false; } );
 
     Global.reCal();
     Global.fixedbg();
@@ -221,11 +222,11 @@ $(document).ready(function() {
                 break;
         }
         Global.section_num = target;
-        if ( target == 1 ) {
-            Global.shrinkHeader(false);
-            $('.nav .fade').removeClass('hover');
-        }
-        else if(target == 5){
+        // if ( target == 1 ) {
+        //     Global.shrinkHeader(false);
+        //     $('.nav .fade').removeClass('hover');
+        // }
+        if(target == 5){
             window.location.href = "/";
         }
         else{
@@ -239,17 +240,17 @@ $(document).ready(function() {
         e.preventDefault(); return false;
     });
 
-    $('.scroll-tip').click(function(event) {
-        if (!Global.isScrolling) {
-            Global.isScrolling = true;
-            $('html,body').animate({scrollTop: Global.targetScrollTop(++Global.section_num)}, 400,function(){
-                Global.isScrolling = false;
-            });
-            if ( Global.section_num > 1 ) {
-                Global.shrinkHeader(true);
-            }
-        }
-    });
+    // $('.scroll-tip').click(function(event) {
+    //     if (!Global.isScrolling) {
+    //         Global.isScrolling = true;
+    //         $('html,body').animate({scrollTop: Global.targetScrollTop(++Global.section_num)}, 400,function(){
+    //             Global.isScrolling = false;
+    //         });
+    //         if ( Global.section_num > 1 ) {
+    //             Global.shrinkHeader(true);
+    //         }
+    //     }
+    // });
 
 });
 
