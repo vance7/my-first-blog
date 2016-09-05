@@ -63,3 +63,19 @@ def blog_search(request):
                             locals(),
                             context_instance=RequestContext(request))
     return redirect('/')
+
+def recent_comment(request):
+    return render_to_response('recentcomment.html',
+                              locals(),
+                              context_instance=RequestContext(request))
+
+def category(request):
+    tags = Tag.objects.all()
+    # nums = []
+    # for searchtag in tags:
+    #     articles = Blog.objects.filter(tag = searchtag)
+    #     num = len(articles)
+    #     nums.append(num)
+    return render_to_response('category.html',
+                              locals(),
+                              context_instance=RequestContext(request))

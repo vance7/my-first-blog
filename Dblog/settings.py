@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_markdown',
+    'disqus',
     'Dblog.blog',
 )
 
@@ -115,3 +116,6 @@ STATICFILES_DIRS = (
 
 FILE_CHARSET = 'utf-8'
 DEFAULT_CHARSET = 'utf-8'
+
+DISQUS_API_KEY = '537H61203P4h7IU9QYitVQAMICRPJMzyNxR3yqjJucWxt10WLEv4h8v94zefmY8o'
+DISQUS_WEBSITE_SHORTNAME = 'http-vancep-pythonanywhere-com'

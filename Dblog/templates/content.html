@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load custom_markdown %}
+{% load disqus_tags %}
 {% block content %}
 <div class="posts">
         <section class="post">
@@ -28,6 +29,6 @@
                 </div>
 
         </section>
-        {% include "duoshuo.html" %}
+        {% disqus_show_comments %}
 </div><!-- /.blog-post -->
 {% endblock %}

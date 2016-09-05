@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% load disqus_tags %}
+{% block content %}
+    {% disqus_recent_comments shortname num_items excerpt_length hide_avatars avatar_size %}
+{% endblock %}
