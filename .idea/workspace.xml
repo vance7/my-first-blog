@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1b8da8b-8c7b-4349-b764-2bada7eda4ea" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Dblog/templates/about_me.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Dblog/templates/duoshuo.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dblog/blog/views.py" afterPath="$PROJECT_DIR$/Dblog/blog/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dblog/templates/base.html" afterPath="$PROJECT_DIR$/Dblog/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dblog/urls.py" afterPath="$PROJECT_DIR$/Dblog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Dblog/templates/porfolio.html" afterPath="$PROJECT_DIR$/Dblog/templates/porfolio.html" />
     </list>
     <ignored path="Dblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,8 +27,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dblog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="435">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -41,18 +37,18 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dblog/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
+            <state relative-caret-position="776">
+              <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="porfolio.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="porfolio.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Dblog/templates/porfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
+            <state relative-caret-position="746">
+              <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -68,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Dblog/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="530">
-              <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+            <state relative-caret-position="770">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="82" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -103,10 +99,10 @@
         <option value="$PROJECT_DIR$/Dblog/templates/recentcomment.html" />
         <option value="$PROJECT_DIR$/Dblog/templates/category.html" />
         <option value="$PROJECT_DIR$/Dblog/templates/accoutkit.html" />
-        <option value="$PROJECT_DIR$/Dblog/templates/porfolio.html" />
-        <option value="$PROJECT_DIR$/Dblog/templates/base.html" />
         <option value="$PROJECT_DIR$/Dblog/urls.py" />
         <option value="$PROJECT_DIR$/Dblog/blog/views.py" />
+        <option value="$PROJECT_DIR$/Dblog/templates/base.html" />
+        <option value="$PROJECT_DIR$/Dblog/templates/porfolio.html" />
       </list>
     </option>
   </component>
@@ -903,34 +899,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dblog/templates/porfolio.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="11" selection-start-line="100" selection-start-column="11" selection-end-line="100" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dblog/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Dblog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="435">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Dblog/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
+        <state relative-caret-position="770">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="82" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dblog/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dblog/templates/porfolio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="746">
+          <caret line="163" column="10" selection-start-line="163" selection-start-column="10" selection-end-line="163" selection-end-column="10" />
           <folding />
         </state>
       </provider>
