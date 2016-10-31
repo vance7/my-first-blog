@@ -33,50 +33,40 @@
         {#					</li>#}
         {#				</ul>#}
         {#			</nav>#}
-        <div id="About" class="row" style="margin-top: 30px">
+        <div id="About" class="row" style="margin-top: 20px">
             <h2 class="text-md-center"> [-- About --] </h2>
-            <div class="col-md-4 offset-md-1">
+            <br>
+            <div class="col-md-4">
                 {% load staticfiles %}
                 <img class="img-fluid img-thumbnail" src="{% static "pengyang_2.JPG" %}" alt="Deadpool">
             </div>
-            <div class="col-md-6 offset-md-1">
-                <br><br>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h4 class="text-muted">
-                            var name = {"Peng Yang"};
-                        </h4>
-                    </li>
-                    <li class="list-group-item">
-                        <h4 class="text-muted">
-                            var hobbies = {"programming", "guitar", "Marvel", "soccer"};
-                        </h4>
-                    </li>
-                    <li class="list-group-item">
-                        <h4 class="text-muted">
-                            var life = {"struggle", "adventure", "passion"};
-                        </h4>
-                    </li>
-                </ul>
+            <div class="col-md-8 jumbotron">
+                <p class="lead">Master degree of computer science from GWU in 2016</p>
+                <p class="lead">Experienced with web development, iOS development</p>
+                <p class="lead">Heavy addition of Manchester United</p>
+                <p class="lead">Love music, movie, guitar, pets and Marvel</p>
+                <p class="lead">Enjoying my life</p>
+                <p class="lead">Next stop: Finding somewhere I can put my strength on</p>
             </div>
         </div>
         <br>
         <div id="Portfolio" class="row jumbotron" style="margin-top: 30px">
             <h2 class="text-md-center"> [-- Portfolio --] </h2>
+            <br>
             <div class="row">
                 <div class="col-md-4 offset-md-1">
                     {% load staticfiles %}
                     <a href="https://github.com/vance7/SneakerPhotoGallery">
                         <img class="img-fluid img-thumbnail" src="{% static "sneaker_bg_1.png" %}" alt="personal blog">
                     </a>
-                    <p class = "text-xs-center">Sneaker Photo Gallery</p>
+                    <p class="text-xs-center">Sneaker Photo Gallery</p>
                 </div>
                 <div class="col-md-4 offset-md-2">
                     {% load staticfiles %}
                     <a href="https://github.com/vance7/SneakerPhotoGallery">
                         <img class="img-fluid img-thumbnail" src="{% static "sneaker_bg_2.png" %}" alt="forum">
                     </a>
-                    <p class = "text-xs-center">Sneaker Photo Gallery</p>
+                    <p class="text-xs-center">Sneaker Photo Gallery</p>
                 </div>
             </div>
             <br>
@@ -87,14 +77,32 @@
                     <a href="https://github.com/vance7/SneakerPhotoGallery">
                         <img class="img-fluid img-thumbnail" src="{% static "about_me_1.png" %}" alt="personal blog">
                     </a>
-                    <p class = "text-xs-center">About Me Page</p>
+                    <p class="text-xs-center">About Me Page</p>
                 </div>
                 <div class="col-md-4 offset-md-2">
                     {% load staticfiles %}
                     <a href="https://github.com/vance7/SneakerPhotoGallery">
                         <img class="img-fluid img-thumbnail" src="{% static "about_me_2.png" %}" alt="forum">
                     </a>
-                    <p class = "text-xs-center">About Me Page</p>
+                    <p class="text-xs-center">About Me Page</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    {% load staticfiles %}
+                    <a href="http://vancep.pythonanywhere.com">
+                        <img class="img-fluid img-thumbnail" src="{% static "personal_blog_1.png" %}" alt="personal blog">
+                    </a>
+                    <p class="text-xs-center">Personal Blog</p>
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    {% load staticfiles %}
+                    <a href="http://vancep.pythonanywhere.com">
+                        <img class="img-fluid img-thumbnail" src="{% static "personal_blog_2.png" %}" alt="forum">
+                    </a>
+                    <p class="text-xs-center">Personal Blog</p>
                 </div>
             </div>
         </div>
