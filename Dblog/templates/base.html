@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
+
 </head>     
 <body>
     <div id="layout" class="pure-g">
@@ -23,9 +24,6 @@
                             <a class="button-success pure-button" href="/index">HomePage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="button-success pure-button" href="/about_me">About Me</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="button-success pure-button" href="/archieve">Archieve</a>
                         </li>
                         <li class="nav-item">
@@ -33,6 +31,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="button-success pure-button" href="/category">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="button-success pure-button" href="/portfolio">Portfolio</a>
                         </li>
                         <li>
                             <form class = "pure-form" action = "/blog_search" method = "get">
@@ -52,7 +53,7 @@
                     <div class="pure-menu pure-menu-horizontal pure-menu-open">
                         <ul>
                             <li><a href="#">Twitter</a></li>
-                            <li><a href="https://github.com/Birkhoff777777">GitHub</a></li>
+                            <li><a href="https://github.com/vance7">GitHub</a></li>
                             <li><a href="#">Weibo</a></li>
                             <li><a href="#">Facebook</a></li>
                         </ul>
@@ -61,5 +62,7 @@
             </div>
         </div>
     </div>
+    <!-- HTTPS required. HTTP will give a 403 forbidden response -->
+    <script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
 </body>
 </html>

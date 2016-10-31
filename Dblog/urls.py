@@ -23,11 +23,11 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^index',views.index),
     url(r'^content',views.content),
-    url(r'^about_me',views.about_me),
     url(r'^archieve',views.archieve),
     url(r'^searchtag',views.searchtag),
     url(r'^markdown/', include( 'django_markdown.urls')),
     url(r'^blog_search',views.blog_search),
     url(r'^recent_comment',views.recent_comment),
     url(r'^category',views.category),
+    url(r'^portfolio',views.portfolio)
 ]

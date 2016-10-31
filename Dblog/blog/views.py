@@ -28,10 +28,6 @@ def content(request):
                   locals(),
                   context_instance=RequestContext(request))
 
-def about_me(request):
-    return render_to_response('about_me.html',
-                  locals(),
-                  context_instance=RequestContext(request))
 
 def archieve(request):
     try:
@@ -77,5 +73,11 @@ def category(request):
     #     num = len(articles)
     #     nums.append(num)
     return render_to_response('category.html',
+                              locals(),
+                              context_instance=RequestContext(request))
+
+
+def portfolio(request):
+    return render_to_response('porfolio.html',
                               locals(),
                               context_instance=RequestContext(request))

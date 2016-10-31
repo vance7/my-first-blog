@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block content %}
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Potfolio Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css"
+              href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <style>
+            body {
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        {#			<nav class = "navbar navbar-full navbar-light bg-faded">#}
+        {#				<a class = "navbar-brand" href="#">Porfolio</a>#}
+        {#				<ul class = "nav navbar-nav pull-right">#}
+        {#					<li class = "nav-item">#}
+        {#						<a class = "nav-link scrollable" href= "#About">About</a>#}
+        {#					</li>#}
+        {#					<li class = "nav-item">#}
+        {#						<a class = "nav-link scrollable" href="#Portfolio">Portfolio</a>#}
+        {#					</li>#}
+        {#					<li class = "nav-item">#}
+        {#						<a class = "nav-link scrollable" href="#Contact">Contact</a>#}
+        {#					</li>#}
+        {#				</ul>#}
+        {#			</nav>#}
+        <div id="About" class="row" style="margin-top: 30px">
+            <h2 class="text-md-center"> [-- About --] </h2>
+            <div class="col-md-4 offset-md-1">
+                {% load staticfiles %}
+                <img class="img-fluid img-thumbnail" src="{% static "pengyang_2.JPG" %}" alt="Deadpool">
+            </div>
+            <div class="col-md-6 offset-md-1">
+                <br><br>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h4 class="text-muted">
+                            var name = {"Peng Yang"};
+                        </h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4 class="text-muted">
+                            var hobbies = {"programming", "guitar", "Marvel", "soccer"};
+                        </h4>
+                    </li>
+                    <li class="list-group-item">
+                        <h4 class="text-muted">
+                            var life = {"struggle", "adventure", "passion"};
+                        </h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="Portfolio" class="row jumbotron" style="margin-top: 30px">
+            <h2 class="text-md-center"> [-- Portfolio --] </h2>
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    {% load staticfiles %}
+                    <a href="https://github.com/vance7/SneakerPhotoGallery">
+                        <img class="img-fluid img-thumbnail" src="{% static "sneaker_bg_1.png" %}" alt="personal blog">
+                    </a>
+                    <p class = "text-xs-center">Sneaker Photo Gallery</p>
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    {% load staticfiles %}
+                    <a href="https://github.com/vance7/SneakerPhotoGallery">
+                        <img class="img-fluid img-thumbnail" src="{% static "sneaker_bg_2.png" %}" alt="forum">
+                    </a>
+                    <p class = "text-xs-center">Sneaker Photo Gallery</p>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-4 offset-md-1">
+                    {% load staticfiles %}
+                    <a href="https://github.com/vance7/SneakerPhotoGallery">
+                        <img class="img-fluid img-thumbnail" src="{% static "about_me_1.png" %}" alt="personal blog">
+                    </a>
+                    <p class = "text-xs-center">About Me Page</p>
+                </div>
+                <div class="col-md-4 offset-md-2">
+                    {% load staticfiles %}
+                    <a href="https://github.com/vance7/SneakerPhotoGallery">
+                        <img class="img-fluid img-thumbnail" src="{% static "about_me_2.png" %}" alt="forum">
+                    </a>
+                    <p class = "text-xs-center">About Me Page</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="Contact" style="margin-top: 30px">
+            <h2 class="text-md-center"> [-- Contact --] </h2>
+            <br>
+            <form id="contact-form" method="post" role="form">
+                <div class="messages"></div>
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control"
+                                       placeholder="Please enter your firstname *" required="required"
+                                       data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control"
+                                       placeholder="Please enter your lastname *" required="required"
+                                       data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control"
+                                       placeholder="Please enter your email *" required="required"
+                                       data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_phone">Phone</label>
+                                <input id="form_phone" type="tel" name="phone" class="form-control"
+                                       placeholder="Please enter your phone">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control"
+                                          placeholder="Message for me *" rows="4" required="required"
+                                          data-error="Please,leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-primary btn-send" value="Send message">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <footer class="footer" style="margin-top: 30px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a class="text-muted text-md-center" href="#">twitter</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="text-muted text-md-center" href="#">github</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="text-muted text-md-center" href="#">facebook</a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="text-muted text-md-center" href="#">freecodecamp</a>
+                    </div>
+                </div>
+        </footer>
+    </div>
+    </body>
+    </html>
+{% endblock %}
