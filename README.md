@@ -1,2 +1,2 @@
 # my-first-blog
-Django+Bootstrap+pure+MySQL
+Django+Bootstrap+Pure.css+MySQL
