@@ -7,7 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 # Create your views here.
 
 def index(request):
-    articles = Blog.objects.all()
+    articles = Blog.objects.all().order_by("original_date")
     paginator = Paginator(articles,1)
     page = request.GET.get('page')
     try :
