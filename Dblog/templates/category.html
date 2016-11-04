@@ -1,20 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="posts">
-    {% if error %}
-        <h2 class = "post-title"> No Related Articles </h2>
-    {% else %}
-    {% for tag in tags %}
-        <section class="post">
-            <a class="post-category post-category-js" href="/searchtag/?id={{tag.id}}">{{ tag.tag_name }}</a>
-{#            {% for num in nums %}#}
-{#            <div>#}
-{#                num#}
-{#            </div>#}
-{#            {% endfor %}#}
-        </section>
-    {% endfor %}
-</div><!-- /.blog-post -->
-{% endif %}
+    <div class="posts">
+        {% if error %}
+            <h2 class="post-title"> No Related Articles </h2>
+        {% else %}
+            <ul class="list-group">
+                {% for tag in tags %}
+                    <li class="list-group-item">
+                        <span class="tag tag-default tag-pill float-xs-right">14</span>
+                        <a href="/searchtag/?id={{ tag.id }}">{{ tag.tag_name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+            </div><!-- /.blog-post -->
+        {% endif %}
 {% endblock %}

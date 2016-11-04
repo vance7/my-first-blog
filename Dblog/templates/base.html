@@ -8,61 +8,72 @@
     <title>Vance Yang Blog</title>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+          integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/blog.css">
     <link rel="stylesheet" href="http://picturebag.qiniudn.com/monokai.css">
 
-</head>     
+</head>
 <body>
-    <div id="layout" class="pure-g">
-        <div class="sidebar pure-u-1 pure-u-md-1-4">
-            <div class="header">
-                <h1 class="brand-title">Vance Yang</h1>
-                <h2 class="brand-tagline">Carpe Diem</h2>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a class="button-success pure-button" href="/index">HomePage</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="button-success pure-button" href="/archieve">Archieve</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="button-success pure-button" href="/recent_comment">Recent Comments</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="button-success pure-button" href="/category">Category</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="button-success pure-button" href="/portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <form class = "pure-form" action = "/blog_search" method = "get">
-                                <input class = "pure-input-3-3" type ="text" name ="keyword" placeholder="search blog">
-                            </form>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+<div id="layout" class="pure-g">
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+            <h1 class="brand-title">Vance Yang</h1>
+            <h2 class="brand-tagline">Carpe Diem</h2>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/index">HomePage</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/archieve">Archieve</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/recent_comment">Recent Comments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/category">Category</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="button-success pure-button" href="/portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <form class="pure-form" action="/blog_search" method="get">
+                            <input class="pure-input-3-3" type="text" name="keyword" placeholder="search blog">
+                        </form>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </div>
 
-        <div class="content pure-u-1 pure-u-md-3-4">
-            <div>
-                {% block content %}
-                {% endblock %}
-                <div class="footer">
-                    <div class="pure-menu pure-menu-horizontal pure-menu-open">
-                        <ul>
-                            <li><a href="http://weibo.com/freelancer7">Weibo</a></li>
-                            <li><a href="https://github.com/vance7">GitHub</a></li>
-                            <li><a href="https://www.freecodecamp.com/vance7">FreeCodeCamp</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                    </div>
+    <div class="content pure-u-1 pure-u-md-3-4">
+        <div>
+            {% block content %}
+            {% endblock %}
+            <div class="footer">
+                <div class="pure-menu pure-menu-horizontal pure-menu-open">
+                    <ul>
+                        <li><a href="http://weibo.com/freelancer7">Weibo</a></li>
+                        <li><a href="https://github.com/vance7">GitHub</a></li>
+                        <li><a href="https://www.freecodecamp.com/vance7">FreeCodeCamp</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
-    <!-- HTTPS required. HTTP will give a 403 forbidden response -->
-    <script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
+</div>
+<!-- HTTPS required. HTTP will give a 403 forbidden response -->
+<script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+        integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js"
+        integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"
+        integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
+        crossorigin="anonymous"></script>
 </body>
 </html>

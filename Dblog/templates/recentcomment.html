@@ -1,5 +1,9 @@
 {% extends "base.html" %}
 {% load disqus_tags %}
 {% block content %}
+    <div class = "jumbotron col-md-10 offset-md-1">
+        <h1 class="display-4 text-md-center">Recent Comments</h1>
+        <hr class = "my-2">
     {% disqus_recent_comments shortname num_items excerpt_length hide_avatars avatar_size %}
+    </div>
 {% endblock %}
